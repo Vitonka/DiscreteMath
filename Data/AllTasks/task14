@@ -1,0 +1,13 @@
+2
+---
+Докажите следующее тождество, используя равносильные преобразования:
+---
+$A \oplus (A \oplus B) = B$
+---
+$A \setminus B = A \oplus(A \cap B)$
+---
+$A \cup B = (A \oplus B) \cup (A \cap B)$
+---
+$(A \cup B) \cap (C \cup D) = (A \cap C) \cup (A \cap D) \cup (B \cap C) \cup (B \cap D)$
+---
+$(A \cup B) \cap (C \oplus D) = ((A \cap C) \cup (B \cap C)) \oplus ((A \cap D) \cup (B \cap D))$

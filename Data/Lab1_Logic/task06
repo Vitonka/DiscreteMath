@@ -1,0 +1,17 @@
+2
+---
+Выясните, верно ли следующее логическое следование:
+---
+$\mathbf{A} \rightarrow \mathbf{B},\ \mathbf{B} \rightarrow \mathbf{C},\ \overline{\mathbf{C}} \models \overline{\mathbf{A}}$
+---
+$\mathbf{A} \rightarrow \mathbf{B},\ \mathbf{C} \rightarrow \mathbf{D},\ \mathbf{A} \vee \mathbf{D} \models \mathbf{B} \vee \mathbf{C}$
+---
+$(\mathbf{A} \vee \mathbf{B}) \rightarrow (\mathbf{C} \cdot \mathbf{D}),\ \mathbf{A} \models \mathbf{C} \cdot \mathbf{D}$
+---
+$\mathbf{A} \rightarrow \mathbf{B},\ \mathbf{C} \rightarrow \mathbf{D},\ \mathbf{A} \vee \mathbf{B} \models \mathbf{B} \vee \mathbf{C}$
+---
+$\mathbf{A} \rightarrow \mathbf{B},\ \mathbf{C} \rightarrow \mathbf{D},\ \overline{\mathbf{B}} \cdot \overline{\mathbf{D}} \models \overline{\mathbf{A}} \cdot \overline{\mathbf{B}}$
+---
+$(\mathbf{A} \vee \mathbf{B}) \rightarrow (\mathbf{C} \rightarrow \mathbf{D}),\ \overline{\mathbf{A}} \cdot \overline{\mathbf{B}} \models \mathbf{C} \cdot \overline{\mathbf{D}}$
+---
+$\mathbf{A} \rightarrow \mathbf{B},\ \mathbf{C} \rightarrow \mathbf{D},\ \mathbf{A} \vee \mathbf{C} \models \mathbf{B} \cdot \mathbf{D}$

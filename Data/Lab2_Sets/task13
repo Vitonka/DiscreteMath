@@ -1,0 +1,17 @@
+2
+---
+Докажите следующее тождество, используя определение равенства множеств:
+---
+$A\setminus (B \cap C) = (A \setminus B) \cup (A \setminus C)$
+---
+$A \setminus (A \setminus B) = A \cap B$
+---
+$A \setminus B = A \setminus(A \cap B)$
+---
+$A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)$
+---
+$A \cap (B \setminus C) = (A \cap B) \setminus C$
+---
+$(A \setminus B) \setminus C = (A \setminus C) \setminus (B \setminus C)$
+---
+$A \cup B = A \cup (B \setminus A)$

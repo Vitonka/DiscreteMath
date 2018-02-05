@@ -1,0 +1,17 @@
+2
+---
+Доказать, что для любых бинарных отношений (определённых на соответствующих множествах) верно:
+---
+$R \cup R = R \cap R = R$
+---
+$\left(\bigcup\limits_{i\in I} R_i\right)^{-1} = \bigcup\limits_{i\in I} R_i^{-1}$
+---
+$\left(\bigcap\limits_{i\in I} R_i\right)^{-1} = \bigcap\limits_{i\in I} R_i^{-1}$
+---
+$R_1 \circ (R_2 \circ R_3) = (R_1 \circ R_2) \circ R_3$
+---
+$(R_1 \circ R_2)^{-1} = R_2^{-1} \circ R_1^{-1}$
+---
+$\left(\bigcup\limits_{i\in I} R_i\right)\circ Q = \bigcup\limits_{i\in I} (R_i \circ Q)$
+---
+$Q \circ \left(\bigcup\limits_{i\in I} R_i\right) = \bigcup\limits_{i\in I} (Q \circ R_i)$ 

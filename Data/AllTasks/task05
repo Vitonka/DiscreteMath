@@ -1,0 +1,23 @@
+2
+---
+Докажите следующее утверждение:
+---
+если $\models \mathbf{A} \vee \mathbf{B}$, $\models \mathbf{A} \sim \mathbf{B}$, то $\models \overline{\mathbf{B}} \rightarrow \mathbf{C}$
+---
+если $\models \mathbf{A}\vee\mathbf{B}$, $\models \mathbf{B} \rightarrow \mathbf{C}$, то $\models \mathbf{A} \vee \mathbf{C}$
+---
+если $\models \overline{\mathbf{A}} \rightarrow \mathbf{B}$, $\models \overline{\mathbf{B}} \vee \overline{\mathbf{C}}$, то $\models \mathbf{C} \rightarrow \mathbf{A}$
+---
+если $\models \overline{\mathbf{B}} \cdot \overline{\mathbf{C}}$, $\models \mathbf{A}\vee \mathbf{B}$, то $\models \overline{\mathbf{A}} \rightarrow \mathbf{C}$
+---
+если $\models \mathbf{A} \vee \mathbf{B}$, $\models \mathbf{A} \sim \mathbf{B}$, то $\models \mathbf{B}$
+---
+если $\models \mathbf{A}$, $\models \mathbf{A} \sim \mathbf{B}$, $\models \mathbf{A} \sim \mathbf{C}$, то $\models \mathbf{B} \cdot \mathbf{C}$
+---
+если $\models\overline{\mathbf{A}} \rightarrow \mathbf{B}$, $\models \overline{\mathbf{B}} \cdot \overline{\mathbf{C}}$, то $\models \mathbf{A} \vee \mathbf{C}$
+---
+если $\models \mathbf{A} \sim \mathbf{B}$, $\models \mathbf{B} \sim \mathbf{C}$, то $\models \mathbf{A} \sim \mathbf{C}$
+---
+если $\models \mathbf{A}$, $\models \mathbf{B}$, $\models \mathbf{C}$, то $\models \mathbf{A} \rightarrow (\mathbf{B} \rightarrow \mathbf{C})$
+---
+если $\models \mathbf{A} \cdot \mathbf{B}$, $\models \mathbf{B} \rightarrow \overline{\mathbf{C}}$, то $\models \mathbf{A} \cdot \overline{\mathbf{C}}$

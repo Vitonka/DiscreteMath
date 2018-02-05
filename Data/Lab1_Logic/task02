@@ -1,0 +1,17 @@
+2
+---
+Решите следующее логическое уравнение:
+---
+$((\overline{B} \rightarrow \overline{C})\rightarrow (\overline{A}\vee C))\cdot (\overline{\overline{C}\rightarrow A}) = \textbf{И}$
+---
+$((A\sim C)\sim (\overline{B}\sim C)) \rightarrow (A \rightarrow B) = \textbf{Л}$
+---
+$(\overline{\overline{A}\cdot \overline{B}\cdot(A \rightarrow C)})\rightarrow ((\overline{C\rightarrow B})\cdot \overline{A}) = \textbf{И}$
+---
+$(C \rightarrow (B \vee \overline{B})) \vee (\overline{\overline{A} \rightarrow B}) \vee (A \cdot B \cdot C) = \textbf{Л}$
+---
+$((A \cdot B) \rightarrow C) \sim (\overline{(C\cdot B)\rightarrow A}) = \textbf{И}$
+---
+$(A \rightarrow (B \rightarrow (\overline{(A \cdot C) \rightarrow B}))) \sim (C \rightarrow (\overline{A\cdot B})) = \textbf{Л}$
+---
+$(\overline{A\cdot (B \rightarrow C)\cdot (A \sim C)}) \rightarrow ((\overline{B \sim C})\vee (A \rightarrow B)) = \textbf{Л}$

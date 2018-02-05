@@ -1,0 +1,17 @@
+2
+---
+Определите, является ли следующее отображение инъективным, сюръективным, биективным:
+---
+$f:\  \mathbb{R} \rightarrow \mathbb{R} ,\ f(x) = (x^2 - 1)^2$
+---
+$f:\  \mathbb{R} \rightarrow \mathbb{R}^+ ,\ f(x) = \ln(|x| + 1)$
+---
+$f:\  (-3, \infty) \rightarrow \mathbb{R} ,\ f(x) = \ln (x + 3)$
+---
+$f:\  \mathbb{R} \rightarrow \mathbb{R} ,\ f(x) = e^{x - 1} - 4$
+---
+$f:\  \mathbb{R} \rightarrow \mathbb{R} ,\ f(x) = x + |x|$
+---
+$f:\  \mathbb{R}^- \rightarrow \mathbb{R}^+ ,\ f(x) = x^2$
+---
+$f:\  \mathbb{Z} \rightarrow \{0, 1, 2, \ldots, n - 1\} ,\ f(x)$ - остаток от деления $x$ на $n$

@@ -1,0 +1,37 @@
+Тип: 2
+---
+Постройте таблицу истинности следующей формулы:
+---
+$(A \rightarrow B) \rightarrow ((A \rightarrow \overline{B}) \rightarrow \overline{A})$
+---
+$((A \rightarrow B)\rightarrow A)\rightarrow B$
+---
+$(A\cdot (B \vee \overline{A})) \cdot ((\overline{B} \rightarrow A) \vee B)$
+---
+$((A \cdot \overline{B}) \rightarrow B)\rightarrow (A \rightarrow B)$
+---
+$A \cdot (B \cdot (\overline{A} \vee \overline{B}))$
+---
+$((((A \rightarrow B) \rightarrow B)\rightarrow B)\rightarrow B)$
+---
+$(((A \vee \overline{B}) \cdot (B \vee C))\vee \overline{A})\vee B$
+---
+$(A \cdot (B \vee C)) \rightarrow (C \rightarrow (A \rightarrow B)) \sim (B \rightarrow (C \rightarrow A))$
+---
+$(((A \sim B) \sim (A \sim C))\sim(B\sim C))\sim A$
+---
+$\overline{(\overline{C} \rightarrow (\overline{A \rightarrow (\overline{B \rightarrow C})}))\rightarrow (A \rightarrow\overline{B})}$
+---
+$((A \vee \overline{B})\rightarrow B) \cdot (\overline{A} \vee B)$
+---
+$(A \rightarrow B) \vee (A \rightarrow (B \cdot A))$
+---
+$(\overline{A \rightarrow (\overline{B \cdot A})}) \rightarrow (A \vee C)$
+---
+$(A \cdot (B \rightarrow A)) \rightarrow \overline{A}$
+---
+$((A \cdot \overline{B}) \rightarrow B) \rightarrow (A \rightarrow B)$
+---
+$(A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B)\rightarrow (A \rightarrow C))$
+---
+$(A \cdot (B \vee \overline{A})) \cdot ((\overline{B} \rightarrow A) \vee B)$

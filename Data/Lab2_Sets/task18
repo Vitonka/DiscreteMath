@@ -1,0 +1,17 @@
+2
+---
+Найдите $D_R$, $E_R$, $R^{-1}$, $R\circ R$, $R\circ R^{-1}$, $R^{-1}\circ R$ для следующих бинарных отношений:
+---
+$R=\{(x, y): x, y \in \left[-\frac{\pi}{2}, \frac{\pi}{2}\right] \text{ и } y \geqslant \sin x\}$
+---
+$R=\{(x, y): x, y \in \mathbb{N} \text{ и } xy \leqslant 15\}$
+---
+$R=\{(x, y): x, y \in \mathbb{N} \text{ и } x^y < y^x\}$
+---
+$R=\{(x, y): x, y \in \mathbb{N} \setminus \{0\} \text{ и } \frac{x}{y} \geqslant 24\}$
+---
+$R=\{(x, y): x, y \in \mathbb{N} \setminus \{0\} \text{ и } \frac{1}{x} + \frac{1}{y} \leqslant 2\}$
+---
+$R=\{(x, y): x, y \in (0, 1] \text{ и } \frac{1}{x} + \frac{1}{y} \in \mathbb{N}\}$
+---
+$R=\{(x, y): x, y \in \mathbb{Z} \text{ и } x + y = 0\}$ 

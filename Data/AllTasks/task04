@@ -1,0 +1,15 @@
+2
+---
+Найдите такую формулу $\mathbf{\Phi}$, что:
+---
+$\models (\mathbf{\Phi} \cdot (\overline{A \rightarrow C})\cdot \overline{B}) \rightarrow (\mathbf{\Phi}\cdot (B \sim \overline{C}))$
+---
+$\models (A \vee \mathbf{\Phi}) \rightarrow (\mathbf{\Phi} \sim (B \vee \overline{C}))$
+---
+$\models ((\mathbf{\Phi} \vee A) \cdot (B \rightarrow C)) \sim \mathbf{\Phi}$
+---
+$\models ((A \rightarrow (B \rightarrow (C \rightarrow \mathbf{\Phi}))) \vee (\mathbf{\Phi} \rightarrow D)) \sim (A \cdot \mathbf{\Phi})$
+---
+$\models (((A \cdot \mathbf{\Phi}) \sim (A \rightarrow \mathbf{\Phi})) \rightarrow B) \sim (A \rightarrow \mathbf{\Phi})$
+---
+$\models ((A \rightarrow \mathbf{\Phi}) \rightarrow B) \rightarrow ((B \rightarrow \mathbf{\Phi}) \rightarrow A)$

@@ -1,0 +1,15 @@
+2
+---
+Выясните, верно ли следующее утверждение (здесь $\mathbf{\Gamma}$ - конечное множество формул, возможно пустое):
+---
+если $\mathbf{\Gamma}, \mathbf{A} \models \mathbf{B}$, то $\mathbf{\Gamma} \models \mathbf{A} \rightarrow \mathbf{B}$
+---
+если $\mathbf{\Gamma} \models \mathbf{A}$ и $\mathbf{\Gamma \models \mathbf{B}}$, то $\mathbf{\Gamma}, \mathbf{A}, \mathbf{\overline{B}} \models \mathbf{C}$
+---
+если $\mathbf{\Gamma}, \mathbf{A} \models \mathbf{B} \rightarrow \mathbf{C}$ и $\mathbf{\Gamma}, \mathbf{B} \models \mathbf{C} \rightarrow \mathbf{A}$, то $\mathbf{\Gamma}, \mathbf{A}, \mathbf{B} \models \mathbf{C}$
+---
+$\mathbf{\Gamma} \models (\mathbf{A} \vee \mathbf{B}) \rightarrow \mathbf{C}$ тогда и только тогда, когда $\mathbf{\Gamma} \models (\overline{\mathbf{A}} \cdot \overline{\mathbf{B}}) \vee \mathbf{C}$
+---
+$\mathbf{\Gamma}, \mathbf{A} \models \mathbf{B} \cdot \mathbf{C}$ тогда и только тогда, когда $\mathbf{\Gamma}, \mathbf{C} \models \mathbf{A} \cdot \mathbf{B}$
+---
+$\mathbf{\Gamma}, \mathbf{A} \models \mathbf{A} \rightarrow \mathbf{B}$ тогда и только тогда, когда $\mathbf{\Gamma}, \mathbf{A} \models \mathbf{B}$

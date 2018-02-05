@@ -1,0 +1,9 @@
+2
+---
+Постройте релейно-контактные схемы по заданным функциям проводимости и указанному числу контактов $h$:
+---
+$(x\cdot y\rightarrow \overline{x}\cdot y)\cdot(x\vee z\cdot y),\ h\leqslant 5$
+---
+$(x\rightarrow y)\rightarrow \overline{x}\cdot(y\vee z),\ h\leqslant 5$
+---
+$(x\rightarrow(y\rightarrow z))\rightarrow(y\rightarrow\overline{x})\ , h\leqslant 5$

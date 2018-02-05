@@ -1,0 +1,19 @@
+2
+---
+Докажите следующее утверждение:
+---
+$(A \setminus B) \cup B = A\quad \Leftrightarrow\quad B \subseteq A$
+---
+$(A \cap B) \cup C = A \cap (B \cup C) \quad \Leftrightarrow \quad C \subseteq A$
+---
+$A \subseteq B \quad \Rightarrow \quad A \cup C \subseteq B \cup C$
+---
+$A \subseteq B \quad \Rightarrow \quad A \cap C \subseteq B \cap C$
+---
+$A \subseteq B \quad \Rightarrow \quad (A \setminus C) \subseteq (B \setminus C)$
+---
+$A \subseteq B \quad \Rightarrow \quad (C \setminus B) \subseteq (C \setminus A)$
+---
+$A \cup B = A \cap B \quad \Rightarrow \quad A = B$
+---
+$A = \overline{B} \quad \Leftrightarrow \quad A \cap B = \emptyset$ и $A \cup B = U$

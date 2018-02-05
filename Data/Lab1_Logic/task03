@@ -1,0 +1,23 @@
+2
+---
+Докажите следующую равносильность без использования таблиц истинности:
+---
+$(A \rightarrow B) \rightarrow B \equiv A \vee B$
+---
+$(\overline{A \cdot \overline{B}}) \rightarrow (\overline{B} \rightarrow A) \equiv (\overline{A \rightarrow B}) \vee A \vee B$
+---
+$(\overline{\overline{A} \rightarrow \overline{B}}) \sim A \equiv (A \sim B) \cdot \overline{A}$
+---
+$(\overline{\overline{A} \vee \overline{B}})\vee (\overline{A\rightarrow B}) \vee B \equiv (\overline{A\cdot \overline{B}}) \rightarrow (\overline{B} \rightarrow A)$
+---
+$(A \vee B) \cdot (\overline{A} \vee C) \equiv (\overline{A} \cdot B) \vee (A \cdot C)$
+---
+$(A \rightarrow B) \cdot C \equiv (\overline{A} \cdot B \cdot C) \vee (\overline{A} \cdot \overline{B} \cdot C) \vee (B \cdot C)$
+---
+$(\overline{\overline{A} \cdot \overline{B}}) \vee ((A \rightarrow B) \cdot A) \equiv A \vee B$
+---
+$(A \rightarrow B) \cdot (B \rightarrow A) \cdot (A \vee B) \equiv A \cdot B$
+---
+$(A \rightarrow \overline{B}) \cdot ((A \rightarrow B) \vee (C \rightarrow A)) \equiv A \rightarrow \overline{B}$
+---
+$(\overline{(A \sim \overline{B}) \vee C}) \cdot B \equiv A \cdot B \cdot \overline{C}$
