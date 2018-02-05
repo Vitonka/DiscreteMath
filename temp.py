@@ -4,13 +4,14 @@ from pylatex.utils import italic, NoEscape
 import numpy as np
 import os
 import sys
+import json
 
 
 TASK_DELIM = '---'
 DEFAULT_TASK_TYPE = 1
 
 
-def parse_task(path, all_variants=False):
+def parse_task(path):
     def parse_task_type(type_string):
         tokens = type_string.strip().split()
         for token in tokens:
@@ -20,19 +21,11 @@ def parse_task(path, all_variants=False):
 
     # Task type 1: every task has its own description
     def parse_task_type_1(preparsed):
-        if not all_variants:
-            var = np.random.randint(len(preparsed))
-            return preparsed[var], var + 1
-        else:
-            return preparsed, 0
+        return preparsed
 
     # Task type 2: all tasks have the same description, but different variants
     def parse_task_type_2(preparsed):
-        if not all_variants:
-            var = np.random.randint(len(preparsed) - 1)
-            return preparsed[0] + '\n\n' + preparsed[var + 1], var + 1
-        else:
-            return [preparsed[0] + '\n\n' + p for p in preparsed[1:]], 0
+        return [preparsed[0] + '\n\n' + p for p in preparsed[1:]]
 
     # TODO: Task type 2 extended: every task has its own description and variants
     # TODO: Tasks without types, uniform distribution
@@ -49,6 +42,11 @@ def parse_task(path, all_variants=False):
             print('Unsupported task type', file=sys.stderr)
             sys.exit()
 
+def generate_tasks_from_variants(tasks, variants):
+    return [task[var] for (task, var) in zip(tasks, variants)]
+
+def generate_tasks_variants(tasks):
+    return [np.random.randint(len(task)) for task in tasks]
 
 def generate_lab_preambule(name):
     doc = Document(name, fontenc='T2A')
@@ -72,18 +70,13 @@ def generate_lab_content(doc, path, variant=0, all_variants=False):
     if variant > 0:
         doc.append(NoEscape(r'\begin{center}\Large{Вариант ' + str(variant) + r'}\end{center}'))
     cur_variant = []
+    all_tasks = [parse_task(os.path.join(path, task_path)) for task_path in sorted(os.listdir(path))]
+    variant = generate_tasks_variants(all_tasks)
+    tasks = generate_tasks_from_variants(all_tasks, variant)
     with doc.create(Enumerate()) as enum:
-        for task_path in sorted(os.listdir(path)):
-            tasks, var = parse_task(os.path.join(path, task_path), all_variants)
-            if not all_variants:
-                enum.add_item(NoEscape(tasks))
-                cur_variant.append(var)
-            else:
-                enum_inside = Enumerate('\\arabic*.')
-                for task in tasks:
-                    enum_inside.add_item(NoEscape(task))
-                enum.add_item(enum_inside)
-    return cur_variant
+        for task in tasks:
+            enum.add_item(NoEscape(task))
+    return variant
 
 
 def generate_labs(name='AllTasksVariants', count=1, path='Data/AllTasks/'):
@@ -100,15 +93,26 @@ def generate_labs(name='AllTasksVariants', count=1, path='Data/AllTasks/'):
     with doc.create(Enumerate()) as enum:
         for var in variants:
             var = zip(range(len(var)), var)
-            enum.add_item(', '.join(map(lambda x: str(x[0] + 1) + '.' + str(x[1]), var)))
+            enum.add_item(', '.join(map(lambda x: str(x[0] + 1) + '.' + str(x[1] + 1), var)))
     doc.generate_pdf(clean_tex=False)
+    return variants
 
 
 def generate_all_tasks(name='AllTasks', path='Data/AllTasks/'):
     doc = generate_lab_preambule(name)
-    generate_lab_content(doc, path, all_variants=True)
+    doc.append(NoEscape(r'\maketitle'))
+    doc.append(NoEscape(r'\vspace{-80pt}'))
+    all_tasks = [parse_task(os.path.join(path, task_path)) for task_path in sorted(os.listdir(path))]
+    with doc.create(Enumerate()) as enum:
+        for task in all_tasks:
+            enum_inside = Enumerate('\\arabic*.')
+            for variant in task:
+                enum_inside.add_item(NoEscape(variant))
+            enum.add_item(enum_inside)
     doc.generate_pdf(clean_tex=False)
 
 if __name__ == '__main__':
-    generate_labs('Lab1_Logic', 60, 'Data/Lab1_Logic')
+    variants = generate_labs('Lab1_Logic', 3, 'Data/Lab1_Logic')
+    with open('Lab1_Logic_variants.txt', 'w') as log:
+        log.write(json.dumps(variants))
     generate_all_tasks('Lab1_Logic_tasks', 'Data/Lab1_Logic')
